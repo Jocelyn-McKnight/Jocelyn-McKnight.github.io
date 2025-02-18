@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://www.ulethbridge.ca/'>University of Lethbridge</a>. <a href='https://ignitecentre.ca/'>Ignite Centre for eLearning</a>.
 
 profile:
   align: right
