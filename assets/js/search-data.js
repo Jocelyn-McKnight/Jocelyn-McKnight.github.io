@@ -90,12 +90,12 @@ ninja.data = [{
           title: 'Humanities Innovation Lab',
           description: "Research",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/hil/";
+              window.location.href = "/projects/hil_project/";
             },},{id: "projects-the-visionary-cross-project",
           title: 'The Visionary Cross Project',
           description: "Research Assistant",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/viscross/";
+              window.location.href = "/projects/vc_project/";
             },},{
         id: 'social-email',
         title: 'email',
