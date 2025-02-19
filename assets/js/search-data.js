@@ -81,16 +81,16 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-pushing-the-boundaries-of-digital-philology",
-          title: 'Pushing the Boundaries of Digital Philology',
-          description: "Independent Study",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
+          section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-pushing-the-boundaries-of-digital-philology",
+          title: 'Pushing the Boundaries of Digital Philology',
+          description: "Independent Study",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/digphil/";
             },},{id: "projects-the-visionary-cross-project",
           title: 'The Visionary Cross Project',
           description: "Research Assistant",
