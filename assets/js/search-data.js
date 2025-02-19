@@ -74,6 +74,11 @@ ninja.data = [{
           description: "Research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-combinatory-phonetics",
+          title: 'Combinatory Phonetics',
+          description: "Independent Study",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/anglfren/";
             },},{
         id: 'social-email',
         title: 'email',
