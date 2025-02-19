@@ -1,81 +1,34 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: The Visionary Cross Project
+description: Research Assistant
+img: assets/img/vcp2.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The Visionary Cross Project is a digital humanities initiative focused on the study and presentation of key medieval artifacts associated with The Visionary Cross tradition. These artifacts—the Ruthwell Cross, Bewcastle Cross, and Brussels Cross—are significant for their Old English and Runic inscriptions. The project has two primary goals: first, to produce high-quality 3D scans of these monuments, and second, to develop a digital edition and archive that makes the objects and their texts accessible to both scholars and the public. Before I began my work on the project, Dr. Daniel Paul O'Donnell from the University of Lethbridge and Dr. Roberto Rosselli Del Turco from the University of Torino completed the first goal of the project with their team.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I contributed to the second goal of the project by developing a working framework for the digital edition as part of an undergraduate independent study. My work began with evaluating platforms for streaming 3D models, ultimately opting to host the models on the Visionary Cross Project’s private repository and using GitHub as a base for the edition's website.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I created Version 1.0, a simple four-page site that established the visual style of pairing images of the crosses on the left with textual content on the right, consistent across the Ruthwell, Bewcastle, and Brussels sections. Clicking on the images links to the 3D models. While functional, this version revealed structural limitations, especially concerning navigation and long-term maintenance.
+
+Building on these insights, I developed Version 2.0, which reorganized the site into modular sections inspired by other well established digital editions. This version introduced separate folders for each cross and a “Frontmatter” section containing introductory materials. I experimented with a JavaScript solution for a shared header and footer to streamline updates, though security concerns highlighted the need for a more robust, future-proof approach.
+
+Looking ahead to Version 3.0, I identified the need to transition the website’s backend to a platform like Jekyll, ensuring both security and scalability. I also explored options for the long-term hosting of the 3D models, including integrating the Archaeology Data Service (ADS) or using GitHub for decimated versions, though file size limitations present ongoing challenges. Future iterations aim to reintegrate the interactive functionality from the 2015 Ruthwell Edition, where 3D models and textual content dynamically respond to user interaction.
+
+My work on the Visionary Cross Project reflects my interests in Old English, philology, and digital textual scholarship. This experience has allowed me to contribute to the preservation and presentation of these culturally significant artifacts while developing skills in digital edition design, web development, and 3D model integration.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/vcp1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/vcp2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/vcp3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images, even citations.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
