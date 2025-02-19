@@ -4,7 +4,7 @@ title: Pushing the Boundaries of Digital Philology
 description: Independent Study
 img: assets/img/digphil.jpg
 importance: 2
-category: work
+category: In progress
 giscus_comments: true
 ---
 
