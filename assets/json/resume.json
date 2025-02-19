@@ -1,24 +1,21 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Jocelyn McKnight",
+    "label": "Undergraduate Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "jocelyn.mcknight@uleth.ca",
+    "url": "https://Jocelyn-McKnight.github.io",
+    "summary": "Undergraduate student majoring in English Language Arts with a double minor in French and Linguistics",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Lethbridge",
+      "countryCode": "CAN",
+      "region": "Alberta"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "linkedin",
+        "username": "Jocelyn-McKnight",
+        "url": "https://www.linkedin.com/in/jocelyn-mcknight/"
       }
     ]
   },
