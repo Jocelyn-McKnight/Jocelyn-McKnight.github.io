@@ -6,28 +6,23 @@
 @use "sass:color";
 
 // Colors
-$red-color: #ff3636 !default;
-$red-color-dark: #b71c1c !default;
-$orange-color: #f29105 !default;
-$blue-color: #0076df !default;
-$blue-color-dark: #00369f !default;
-$cyan-color: #2698ba !default;
-$light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
-$green-color: #00ab37 !default;
-$green-color-lime: #b7d12a !default;
-$green-color-dark: #009f06 !default;
-$green-color-light: #ddffdd !default;
-$green-color-bright: #11d68b !default;
-$purple-color: #b509ac !default;
-$light-purple-color: color.adjust($purple-color, $lightness: 25%);
-$pink-color: #f92080 !default;
-$pink-color-light: #ffdddd !default;
-$yellow-color: #efcc00 !default;
+$red-color: #ff4d4d; // Optional Red
+$red-color-dark: #b71c1c;
 
-$grey-color: #828282 !default;
-$grey-color-light: color.adjust($grey-color, $lightness: 40%);
-$grey-color-dark: #1c1c1d;
-$grey-900: #212529;
+$orange-color: #ffa500; // Gold-Orange Accent
+$blue-color: #f4b400; // Gold for Primary Links/Buttons
+$blue-color-dark: #d39e00; // Darker Gold for Hover
+
+$cyan-color: #ffeb99; // Light Yellow-Gold (Accent or Info)
+$green-color: #11d68b; // Optional Success Green
+$green-color-dark: #0a9f60;
+$purple-color: #f4b400; // Use Gold as Primary Theme Color
+$pink-color: #f92080;
+$yellow-color: #ffd700; // Bright Gold for Highlights
+
+$grey-color: #cccccc; // Light Grey Text (If needed)
+$grey-color-light: #999999;
+$grey-color-dark: #333333; // Dark Grey for subtle elements
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
