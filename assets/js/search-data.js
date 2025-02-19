@@ -79,6 +79,11 @@ ninja.data = [{
           description: "Independent Study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/anglfren/";
+            },},{id: "projects-instructional-design",
+          title: 'Instructional Design',
+          description: "Ignite Centre for eLearning",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ignite/";
             },},{
         id: 'social-email',
         title: 'email',
