@@ -63,7 +63,7 @@
       "title": "Canadian Parents for French Alberta Bursary",
       "date": "2022-06",
       "awarder": "Canadian Parents for French",
-      "url": 
+      "url": "",
       "summary": "Awarded to one French immersion high school student that is continuing with French in post secondary education."
     }
   ],
@@ -72,39 +72,39 @@
       "name": "DELF B1",
       "date": "2022-06",
       "issuer": "Alliance Francaise of Calgary",
-      "url":
-      "icon":
+      "url": "",
+      "icon": "",
     },
     {
       "name": "DELF B2",
       "date": "2022-06",
       "issuer": "Alliance Francaise of Calgary",
-      "url":
-      "icon":
+      "url": "",
+      "icon": "",
     },
     {
       "name": "Digital Humanities for Beginners",
       "date": "2024-04",
       "issuer": "University of Lethbridge",
-      "url":
-      "icon":
+      "url": "",
+      "icon": "",
      }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "",
     },
     {
       "language": "French",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "",
     }
     {
       "language": "Spanish",
       "fluency": "Novice",
-      "icon": ""
+      "icon": "",
     }
   ],
 }
