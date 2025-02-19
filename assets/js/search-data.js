@@ -95,7 +95,7 @@ ninja.data = [{
           title: 'The Visionary Cross Project',
           description: "Research Assistant",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/vc_project/";
+              window.location.href = "/projects/viscross/";
             },},{
         id: 'social-email',
         title: 'email',
