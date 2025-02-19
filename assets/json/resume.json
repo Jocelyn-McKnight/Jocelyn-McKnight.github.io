@@ -42,7 +42,10 @@
       "startDate": "2024-11",
       "endDate": "",
       "summary": "Serves on the board and executive voard of the University of Lethbridge's student journal.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "highlights": [
+        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
+        "Men of the year 2014 by Time magazine"
+      ]
     }
   ],
   "education": [
@@ -55,7 +58,7 @@
       "startDate": "2019-09",
       "endDate": "2022-06",
       "score": "",
-      "courses": "",
+      "courses": ""
     }
   ],
   "awards": [
@@ -73,38 +76,38 @@
       "date": "2022-06",
       "issuer": "Alliance Francaise of Calgary",
       "url": "",
-      "icon": "",
+      "icon": ""
     },
     {
       "name": "DELF B2",
       "date": "2022-06",
       "issuer": "Alliance Francaise of Calgary",
       "url": "",
-      "icon": "",
+      "icon": ""
     },
     {
       "name": "Digital Humanities for Beginners",
       "date": "2024-04",
       "issuer": "University of Lethbridge",
       "url": "",
-      "icon": "",
-     }
+      "icon": ""
+    }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker",
-      "icon": "",
+      "icon": ""
     },
     {
       "language": "French",
       "fluency": "Fluent",
-      "icon": "",
-    }
+      "icon": ""
+    },
     {
       "language": "Spanish",
       "fluency": "Novice",
-      "icon": "",
+      "icon": ""
     }
-  ],
+  ]
 }
