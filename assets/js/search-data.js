@@ -81,12 +81,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-the-visionary-cross-project",
-          title: 'The Visionary Cross Project',
-          description: "Research Assistant",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-pushing-the-boundaries-of-digital-philology",
+          section: "News",},{id: "projects-pushing-the-boundaries-of-digital-philology",
           title: 'Pushing the Boundaries of Digital Philology',
           description: "Independent Study",
           section: "Projects",handler: () => {
@@ -95,7 +90,12 @@ ninja.data = [{
           title: 'Humanities Innovation Lab',
           description: "Research",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/hil_project/";
+            },},{id: "projects-the-visionary-cross-project",
+          title: 'The Visionary Cross Project',
+          description: "Research Assistant",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vc_project/";
             },},{
         id: 'social-email',
         title: 'email',
