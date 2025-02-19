@@ -1,81 +1,21 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Pushing the Boundaries of Digital Philology
+description: Independent Study
+img: assets/img/digphil.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+I am undertaking an independent study that seeks to push beyond the traditional boundaries of digital philology. This project was designed and is being executed in collaberation with PhD Candidate [Davide Pafumi](https://davidepafumi.github.io/).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Key components of this study included:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Survival Analysis of Old English Lexicon: We adapted statistical techniques commonly used in demographic and medical research to analyze the “lifespans” of Old English words—examining patterns of lexical emergence, persistence, and disappearance across the corpus of Old English poetry.
+AI-Assisted Old English Lemmatizer: We testing the possibility of a new lemmatization tool tailored to Old English, using the poetric corpus of Old English, the Clark Hall Dictionary, and custom inflectional patterns.
+Digital Collation of Cædmon’s Hymn: We are using digital collation technology, through textual communities, to collate the manuscript witnesses of Cædmon’s Hymn, investigating ways to visualize textual variation computationally.
+AI Spelling Relaxer: Davide will work on an AI-powered tool to “relax” Middle English spelling variations, enhancing the readability of texts and improving computational search and analysis.
+Data Sonification: We will experiment with transforming linguistic data from the Canterbury Tales into sound, exploring how auditory representations of philological patterns might offer new insights into textual structure and lexical change.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Together, these experiments reflect our broader goal of integrating computational methods with traditional philological rigor. This work not only advances the digital study of medieval English but also opens new possibilities for representing and interacting with linguistic data in ways that challenge the boundaries of textual scholarship.
