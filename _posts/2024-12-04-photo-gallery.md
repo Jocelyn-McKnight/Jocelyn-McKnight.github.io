@@ -14,12 +14,3 @@ images:
 ---
 
 Trying this out with a little picture
-
-## [Spotlight JS](https://nextapps-de.github.io/spotlight/)
-<!-- Group 1 -->
-<div class="spotlight-group">
-    <a class="spotlight" href="img/1.jpg">
-        <img src="img/1.jpg" />
-    </a>
-</div>
----
