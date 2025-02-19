@@ -5,9 +5,9 @@
 @use "sass:color";
 
 :root {
---global-bg-color: #{$grey-color};
+--global-bg-color: #{$grey-color-dark};
 --global-code-bg-color: #{$code-bg-color-light};
---global-text-color: #{$white-color}; /* or gold if you prefer */
+--global-text-color: #{$black-color}; /* or gold if you prefer */
 --global-text-color-light: #{$grey-color-light};
 --global-theme-color: #{$purple-color}; /* This is your primary gold now */
 --global-hover-color: #{$yellow-color}; /* Bright Gold */
