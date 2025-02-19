@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/presentations/";
           },
-        },{id: "post-a-post-with-image-galleries",
+        },{id: "post-getting-the-lay-of-the-land",
       
-        title: "a post with image galleries",
+        title: "Getting the Lay of the Land",
       
-      description: "this is what included image galleries could look like",
+      description: "A first blog post to test the waters",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2024/photo-gallery/";
+          window.location.href = "/blog/2025/photo-gallery/";
         
       },
     },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
