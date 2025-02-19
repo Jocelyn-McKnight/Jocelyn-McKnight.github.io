@@ -85,12 +85,12 @@ ninja.data = [{
           title: 'Pushing the Boundaries of Digital Philology',
           description: "Independent Study",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/dp_project/";
+              window.location.href = "/projects/2_project/";
             },},{id: "projects-humanities-innovation-lab",
           title: 'Humanities Innovation Lab',
           description: "Research",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/hil_project/";
+              window.location.href = "/projects/3_project/";
             },},{id: "projects-the-visionary-cross-project",
           title: 'The Visionary Cross Project',
           description: "Research Assistant",
