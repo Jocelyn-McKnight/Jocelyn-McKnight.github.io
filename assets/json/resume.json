@@ -4,12 +4,12 @@
     "label": "Undergraduate",
     "image": "",
     "email": "jossymcknight6@gmail.com",
-    "phone":
+    "phone": "",
     "url": "https://Jocelyn-McKnight.github.io",
     "summary": "An undergraduate student in English, French, and Linguistics",
     "location": {
-      "address": 
-      "postalCode": 
+      "address": "",
+      "postalCode": "",
       "city": "Lethbridge and Calgary",
       "countryCode": "Canada",
       "region": "Alberta"
@@ -26,9 +26,9 @@
     {
       "name": "University of Lethbridge",
       "position": "Undergraduate Teaching Assistant",
-      "url":
+      "url": "",
       "startDate": "2024-09",
-      "endDate":
+      "endDate": "",
       "summary": "Responsible for marking various types of assesments such as compositions and exams for beginner level French classes.",
       "highlights": ["Relativity"]
     }
@@ -40,7 +40,7 @@
       "position": "Treasurer",
       "url": "https://themeliorist.ca/",
       "startDate": "2024-11",
-      "endDate":
+      "endDate": "",
       "summary": "Serves on the board and executive voard of the University of Lethbridge's student journal.",
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
@@ -49,13 +49,13 @@
     {
       "institution": "Dr. E. P. Scarlett High School",
       "location": "Calgary, Canada",
-      "url":
+      "url": "",
       "area": "French Immersion and Spanish Language and Culture",
       "studyType": "Diploma",
       "startDate": "2019-09",
       "endDate": "2022-06",
-      "score":
-      "courses":
+      "score": "",
+      "courses": "",
     }
   ],
   "awards": [
