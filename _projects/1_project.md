@@ -4,7 +4,7 @@ title: The Visionary Cross Project
 description: Research Assistant
 img: assets/img/vcp2.jpg
 importance: 1
-category: work
+category: Research
 related_publications: true
 ---
 
