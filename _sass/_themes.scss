@@ -8,7 +8,7 @@
 --global-bg-color: #{$grey-color-dark};
 --global-code-bg-color: #{$code-bg-color-light};
 --global-text-color: #{$black-color}; /* or gold if you prefer */
---global-text-color-light: #{$grey-color-light};
+--global-text-color-light: #{$grey-color};
 --global-theme-color: #{$purple-color}; /* This is your primary gold now */
 --global-hover-color: #{$yellow-color}; /* Bright Gold */
 --global-hover-text-color: #{$black-color};
@@ -79,6 +79,7 @@ html[data-theme="dark"] {
 --global-bg-color: #{$black-color};
 --global-code-bg-color: #{$code-bg-color-light};
 --global-text-color: #{$white-color}; /* or gold if you prefer */
+--global-text-color-light: #{$grey-color};
 --global-theme-color: #{$purple-color}; /* This is your primary gold now */
 --global-hover-color: #{$yellow-color}; /* Bright Gold */
 --global-hover-text-color: #{$black-color};
