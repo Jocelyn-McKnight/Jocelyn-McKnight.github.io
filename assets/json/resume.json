@@ -25,21 +25,21 @@
       "position": "Undergraduate Teaching Assistant",
       "startDate": "2024-09",
       "endDate": "ongoing",
-      "summary": "For beginner French classes, I am responsible for marking various works of the students and provide helpful feedback related to grammar, style, and compositions.",
-    }
+      "summary": "For beginner French classes, I am responsible for marking various works of the students and provide helpful feedback related to grammar, style, and compositions."
+    },
     {
       "organization": "Ignite Centre for eLearning",
       "position": "Instructional Design Support and Academic Excellence Partner",
       "startDate": "2023-04",
       "endDate": "ongoing",
-      "summary": "I was responsible for creating instructional materials for grades 1 through 12 in all subjects as well as designing an effective online course for all high school students.",
-    }
+      "summary": "I was responsible for creating instructional materials for grades 1 through 12 in all subjects as well as designing an effective online course for all high school students."
+    },
     {
       "organization": "The Visionary Cross Project",
       "position": "Research Assistant",
       "startDate": "2024-09",
-      "endDate": "ongoing", 
-      "summary": "I am involved in the creation of a digital edition of Old English artifacts related to the Ruthwell Cross. I assists in all aspects of the project such as coding, research, and innovative problem solving.",
+      "endDate": "ongoing",
+      "summary": "I am involved in the creation of a digital edition of Old English artifacts related to the Ruthwell Cross. I assist in all aspects of the project such as coding, research, and innovative problem solving."
     }
   ],
   "volunteer": [
@@ -50,7 +50,7 @@
       "url": "https://themeliorist.ca/",
       "startDate": "2024-12",
       "endDate": "2025-12",
-      "summary": "Surved as treasurer and lead the finance committee for The Meliorist—the University of Lethbridge student journal. ",
+      "summary": "Served as treasurer and led the finance committee for The Meliorist—the University of Lethbridge student journal."
     }
   ],
   "education": [
@@ -63,7 +63,7 @@
       "endDate": "2022-06",
       "score": "Honours",
       "courses": ["French Language Arts", "Spanish Language and Culture", "Calculus", "Physics"]
-    }
+    },
     {
       "institution": "University of Lethbridge",
       "location": "Lethbridge, AB",
@@ -80,67 +80,67 @@
       "date": "2022-06",
       "awarder": "Canadian Parents for French-Calgary Chapter",
       "summary": "Award to a French Immersion student who intends to continue full or part-time French education at a post-secondary institution in Canada."
-    }
+    },
     {
       "title": "Alexander Rutherford Scholarship",
       "date": "2022-09",
       "awarder": "Alberta Student Aid",
       "summary": "Awarded to high school students pursuing post secondary education with an average of 80% or higher."
-    }
+    },
     {
       "title": "Board of Governors' Admission Scholarship",
       "date": "2022-09",
       "awarder": "University of Lethbridge",
       "summary": "Awarded to high school students applying to the University of Lethbridge with an average of 80% or higher."
-    }
+    },
     {
       "title": "Dean's Honour List",
       "date": "2023-04",
       "awarder": "University of Lethbridge",
       "summary": "Awarded for outstanding academic performance and a 3.88 GPA."
-    }
+    },
     {
       "title": "ORS Academic Achievement Award",
       "date": "2023-08",
       "awarder": "University of Lethbridge",
       "summary": "Awarded for academic achievement for students living in the University of Lethbridge residence community."
-    }
+    },
     {
       "title": "Jason Lang Scholarship",
       "date": "2023-12",
       "awarder": "Alberta Student Aid",
       "summary": "Awarded for Alberta post-secondary students for their academic achievements."
-    } 
+    },
     {
       "title": "Dean's Honour List",
       "date": "2023-12",
       "awarder": "University of Lethbridge",
       "summary": "Awarded for outstanding academic performance and a 3.80 GPA."
-    }
+    },
     {
       "title": "Dean's Honour List",
       "date": "2024-04",
       "awarder": "University of Lethbridge",
       "summary": "Awarded for outstanding academic performance and a 3.92 GPA."
-    }
+    },
     {
       "title": "Capstone Scholarship in Integrative Thinking",
       "date": "2024-08",
       "awarder": "University of Lethbridge",
       "summary": "Awarded to third year students who have completed Liberal Education courses and maintained a GPA of above 3.50."
-    }
+    },
     {
       "title": "University of Lethbridge Scholarship",
       "date": "2024-08",
       "awarder": "University of Lethbridge",
       "summary": "Awarded for outstanding academic performance."
-    }
+    },
     {
       "title": "Jason Lang Scholarship",
       "date": "2024-12",
       "awarder": "Alberta Student Aid",
       "summary": "Awarded for Alberta post-secondary students for their academic achievements."
-    } 
+    },
     {
       "title": "Dean's Honour List",
       "date": "2024-12",
@@ -166,64 +166,18 @@
       "date": "2024-04",
       "issuer": "University of Lethbridge",
       "icon": "fa-solid fa-envelope"
-    },
+    }
   ],
   "skills": [
     {
       "name": "Technical",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Website development and markup (XML-TEI, HTML, Jekyll)",
-        "Corpus Linguistics (AntConc, Voyant tools, SketchEngine)"
-      ]
+      "keywords": ["Website development and markup (XML-TEI, HTML, Jekyll)", "Corpus Linguistics (AntConc, Voyant tools, SketchEngine)"]
     }
-    {
-      "name": "Medieval",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Old English Translation (Prose and Poetry)",
-        "Paleography (Old English and Caroline Miniscule, Gothic Textuals, Anglicana, Secretary",
-        "Pedagogical methods for Classical languages"
-      ]
-    }
-    {
-      "name": "Instructional Design",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Moodle",
-        "Digital Materials",
-        "k-12"
-      ]
-    } 
   ],
   "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "French",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-    {
-      "language": "Spanish",
-      "fluency": "Novice",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Old English",
-        "Philology",
-        "Computational Linguistics",
-        "Phonetics & Phonology",
-        "Endangered Languages",
-        "Digital Humanities"
-      ]
-    }
+    { "language": "English", "fluency": "Native speaker", "icon": "" },
+    { "language": "French", "fluency": "Fluent", "icon": "" },
+    { "language": "Spanish", "fluency": "Novice", "icon": "" }
+  ]
 }
