@@ -5,6 +5,7 @@ description: Independent Study
 img: assets/img/anglfren.jpg
 importance: 4
 category: past
+giscus_comments: true
 ---
 
 In the summer of 2024, I conducted an independent study examining sound changes for French loanwords in English and English loanwords in French, with a focus on combinatory phonetics—the ways in which sounds adapt and interact when languages borrow from one another. This study aimed to analyze how phonetic environments shape the pronunciation of borrowed words, revealing patterns of adaptation that reflect both phonological systems and the sociolinguistic relationship between French and English.
