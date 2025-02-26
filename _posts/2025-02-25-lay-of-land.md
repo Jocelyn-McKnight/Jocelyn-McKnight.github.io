@@ -6,6 +6,7 @@ description: A first blog post to test the waters
 tags:
 categories: fluff
 thumbnail: assets/img/blog1.jpg
+giscus_comments: true
 images:
   lightbox2: true
   photoswipe: true
@@ -13,4 +14,4 @@ images:
   venobox: true
 ---
 
-A first little blog post.
+A first little blog post for my personal website. This is the first itteration and it is bound to improve.
