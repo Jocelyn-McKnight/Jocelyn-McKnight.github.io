@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/presentations/";
           },
-        },{id: "post-getting-the-lay-of-the-land",
-      
-        title: "Getting the Lay of the Land",
-      
-      description: "A first blog post to test the waters",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/photo-gallery/";
-        
-      },
-    },{id: "news-a-simple-inline-announcement",
+        },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
