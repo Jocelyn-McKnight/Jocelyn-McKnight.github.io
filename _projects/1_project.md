@@ -6,6 +6,7 @@ img: assets/img/vcp2.jpg
 importance: 1
 category: In progress
 related_publications: true
+giscus_comments: true
 ---
 
 The Visionary Cross Project is a digital humanities initiative focused on the study and presentation of key medieval artifacts associated with The Visionary Cross tradition. These artifacts—the Ruthwell Cross, Bewcastle Cross, and Brussels Cross—are significant for their Old English and Runic inscriptions. The project has two primary goals: first, to produce high-quality 3D scans of these monuments, and second, to develop a digital edition and archive that makes the objects and their texts accessible to both scholars and the public. Before I began my work on the project, Dr. Daniel Paul O'Donnell from the University of Lethbridge and Dr. Roberto Rosselli Del Turco from the University of Torino completed the first goal of the project with their team.
