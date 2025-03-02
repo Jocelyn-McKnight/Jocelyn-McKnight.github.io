@@ -1,9 +1,9 @@
 ---
 layout: post
-title: The missing Letters of Old English
+title: The Missing Letters of Old English
 date: 2023-12-12
 description: A posters for Old English 3450
-tags: Old English
+tags: Old-English
 categories: Posters
 thumbnail: assets/img/miss-let.jpg
 giscus_comments: true
