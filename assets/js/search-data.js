@@ -41,6 +41,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/lay-of-land/";
         
       },
+    },{id: "post-the-missing-letters-of-old-english",
+      
+        title: "The missing Letters of Old English",
+      
+      description: "A posters for Old English 3450",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/missing-letters/";
+        
+      },
     },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
