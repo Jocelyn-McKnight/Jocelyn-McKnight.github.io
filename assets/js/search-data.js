@@ -43,7 +43,7 @@ ninja.data = [{
       },
     },{id: "post-the-missing-letters-of-old-english",
       
-        title: "The missing Letters of Old English",
+        title: "The Missing Letters of Old English",
       
       description: "A posters for Old English 3450",
       section: "Posts",
