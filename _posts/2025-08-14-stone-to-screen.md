@@ -2,6 +2,7 @@
 layout: post
 title: "Stone to Screen: The Visionary Cross Digital Edition"
 date: 2025-08-14 16:00:00
+thumbnail: "/assets/img/stonetoscreen.png"
 description: "A poster for the University of Lethbridge Summer Research Showcase on the Visionary Cross Project"
 tags: [Old-English, Visionary Cross, Research]
 categories: [Poster]

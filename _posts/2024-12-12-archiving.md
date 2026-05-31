@@ -2,6 +2,7 @@
 layout: post
 title: "The Future of Archiving & Preserving Linguistic Data"
 date: 2023-01-12 16:00:00
+thumbnail: "/assets/img/arch.jpg"
 description: "A poster for Endangered Languages 2750"
 tags: [Linguistics]
 categories: [Posters]

@@ -149,17 +149,21 @@ table th { background-color: var(--code-bg); }
   .profile-pic { float: none; display: block; margin: 0 auto 1.2rem; max-width: 70%; }
 }
 
-// --- Projects card grid --------------------------------------------------
-.projects-grid {
+// --- Card grid (used by both Projects and Blog) --------------------------
+.projects-grid, .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 1.25rem 0 2.5rem;
 }
-@media (max-width: 800px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .projects-grid { grid-template-columns: 1fr; } }
+@media (max-width: 800px) {
+  .projects-grid, .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .projects-grid, .card-grid { grid-template-columns: 1fr; }
+}
 
-.project-card {
+.project-card, .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -171,7 +175,8 @@ table th { background-color: var(--code-bg); }
 
   img { width: 100%; height: 160px; object-fit: cover; display: block; }
   .card-body { padding: 0.7rem 1rem 1rem; }
-  h3 { margin: 0.3rem 0; font-size: 1.1rem; }
+  .post-meta { display: block; font-size: 0.8rem; color: var(--muted); margin-top: 0.4rem; }
+  h3 { margin: 0.25rem 0 0.4rem; font-size: 1.1rem; line-height: 1.3; }
   p { margin: 0; color: var(--muted); font-size: 0.9rem; }
 }
 

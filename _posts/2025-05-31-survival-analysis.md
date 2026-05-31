@@ -2,6 +2,7 @@
 layout: post
 title: "Working with Historical Textual Data: Preliminary Results from Applying Survival Analysis to the Old English Poetic Corpus"
 date: 2025-05-31 16:00:00
+thumbnail: "/assets/img/surv-ana.jpg"
 description: "A Presentation for CSDH Congress"
 tags: [Old English, Linguistics]
 categories: [Presentation]

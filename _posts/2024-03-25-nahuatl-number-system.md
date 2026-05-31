@@ -2,6 +2,7 @@
 layout: post
 title: "Semantics and Morphology for the Aztec Vigesimal System in Nahuatl"
 date: 2024-03-15 16:00:00
+thumbnail: "/assets/img/aztec.jpg"
 description: "A poster for Quantitative Reasoning"
 tags: [Linguistics]
 categories: [Posters]

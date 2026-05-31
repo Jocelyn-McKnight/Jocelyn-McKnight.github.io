@@ -2,6 +2,7 @@
 layout: post
 title: "The Missing Letters of Old English"
 date: 2023-12-12 16:00:00
+thumbnail: "/assets/img/miss-let.jpg"
 description: "A poster for Old English 3450"
 tags: [Old English]
 categories: [Posters]

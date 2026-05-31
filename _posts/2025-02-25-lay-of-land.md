@@ -2,6 +2,7 @@
 layout: post
 title: "Cross-Language Transformations: The Journey of Loanwords Between French & English"
 date: 2025-03-22 16:00:00
+thumbnail: "/assets/img/cross-lang.jpg"
 description: "A poster on loanword sound adaptions"
 tags: [Linguistics]
 categories: [Posters]

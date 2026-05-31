@@ -2,6 +2,7 @@
 layout: post
 title: "Beowulf: The Unique Take on the Dragon Narrative"
 date: 2024-04-05 16:00:00
+thumbnail: "/assets/img/dragon.jpg"
 description: "A Presentation for Advanced Old English"
 tags: [Old English]
 categories: [Presentation]
