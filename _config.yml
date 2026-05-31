@@ -16,7 +16,7 @@ plugins:
 # Pages shown in the top navigation bar, in this order.
 # (The site title / your name links to the home page.)
 header_pages:
-  - home.html
+  - index.html
   - projects.html
   - blog.html
   - cv.html
