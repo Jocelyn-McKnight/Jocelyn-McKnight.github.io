@@ -209,21 +209,21 @@ table th { background-color: var(--code-bg); }
   .profile-pic { float: none; display: block; margin: 0 auto 1.2rem; max-width: 70%; }
 }
 
-// --- Card grid (used by both Projects and Blog) --------------------------
-.projects-grid, .card-grid {
+// --- Project card grid ---------------------------------------------------
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 1.25rem 0 2.5rem;
 }
 @media (max-width: 800px) {
-  .projects-grid, .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
-  .projects-grid, .card-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
 }
 
-.project-card, .card {
+.project-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -236,9 +236,115 @@ table th { background-color: var(--code-bg); }
 
   img { width: 100%; height: 160px; object-fit: cover; display: block; }
   .card-body { padding: 0.9rem 1.1rem 1.2rem; }
-  .post-meta { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem; }
   h3 { margin: 0.25rem 0 0.4rem; font-size: 1.15rem; line-height: 1.3; }
   p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+}
+
+// --- Blog list (row cards + category filter, after the HDI outputs page) -
+.blog-controls { margin: 1.5rem 0 1.75rem; }
+
+.blog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+.blog-chip {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.blog-chip:hover { color: var(--accent); border-color: var(--accent); }
+.blog-chip.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.blog-count { margin: 0; font-size: 0.8rem; color: var(--muted); }
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0 0 2.5rem;
+}
+
+.blog-row {
+  display: flex;
+  align-items: stretch;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.blog-row:hover { transform: translateY(-3px); box-shadow: var(--shadow); text-decoration: none; }
+
+.blog-row__thumb { flex: 0 0 170px; background: var(--code-bg); }
+.blog-row__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.blog-row__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.3rem;
+}
+
+.blog-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.blog-row__tag { color: var(--accent); }
+
+.blog-row__title {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+.blog-row:hover .blog-row__title { color: var(--accent); }
+
+.blog-row__excerpt {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.blog-row__more {
+  margin-top: auto;
+  align-self: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.blog-empty { text-align: center; color: var(--muted); padding: 2.5rem 0; }
+
+@media (max-width: 560px) {
+  .blog-row { flex-direction: column; }
+  .blog-row__thumb { flex: none; height: 170px; }
 }
 
 .project-hero {

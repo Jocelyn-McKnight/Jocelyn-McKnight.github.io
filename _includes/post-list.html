@@ -1,15 +1,78 @@
-<!-- Blog: a card for every post, newest first. -->
-<div class="card-grid">
-  {% for post in site.posts %}
-  <div class="card">
-    <a href="{{ post.url | relative_url }}">
-      {% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title | escape }}">{% endif %}
-      <div class="card-body">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>{{ post.title | escape }}</h3>
-        <p>{{ post.description }}</p>
-      </div>
-    </a>
+<!-- Blog: a filterable list of post "row cards", styled after the HDI
+     outputs page (https://tessabordalejo.github.io/hdi-demo-personal/outputs/).
+     Each row shows date + category, title, description, and a read-more link.
+     The chip bar filters by category; the count updates as you filter. -->
+
+<div class="blog-controls">
+  <div class="blog-filter" aria-label="Filter posts by category">
+    <button class="blog-chip is-active" type="button" data-filter="all">All</button>
+    {%- assign cats = "" | split: "" -%}
+    {%- for post in site.posts -%}
+      {%- for cat in post.categories -%}
+        {%- unless cats contains cat -%}{%- assign cats = cats | push: cat -%}{%- endunless -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- assign cats = cats | sort -%}
+    {%- for cat in cats -%}
+    <button class="blog-chip" type="button" data-filter="{{ cat | slugify }}">{{ cat }}</button>
+    {%- endfor -%}
   </div>
+  <p class="blog-count" id="blog-count"></p>
+</div>
+
+<div class="blog-list" id="blog-list">
+  {% for post in site.posts %}
+  {%- assign cat = post.categories | first -%}
+  {%- capture cat_slugs %}{% for c in post.categories %}{{ c | slugify }} {% endfor %}{% endcapture -%}
+  <a class="blog-row" href="{{ post.url | relative_url }}" data-category="{{ cat_slugs | strip }}">
+    {% if post.thumbnail %}
+    <span class="blog-row__thumb"><img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title | escape }}" loading="lazy"></span>
+    {% endif %}
+    <span class="blog-row__body">
+      <span class="blog-row__meta">
+        <span class="blog-row__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% if cat %}<span class="blog-row__tag">{{ cat }}</span>{% endif %}
+      </span>
+      <span class="blog-row__title">{{ post.title | escape }}</span>
+      {% if post.description %}<span class="blog-row__excerpt">{{ post.description }}</span>{% endif %}
+      <span class="blog-row__more">Read more →</span>
+    </span>
+  </a>
   {% endfor %}
 </div>
+
+<p class="blog-empty" id="blog-empty" hidden>No posts in this category.</p>
+
+<script>
+  // Filter the post list by category chip, and keep a live count.
+  (function () {
+    var list = document.getElementById("blog-list");
+    if (!list) return;
+    var rows = Array.prototype.slice.call(list.querySelectorAll(".blog-row"));
+    var chips = Array.prototype.slice.call(document.querySelectorAll(".blog-chip"));
+    var countEl = document.getElementById("blog-count");
+    var emptyEl = document.getElementById("blog-empty");
+
+    function apply(filter) {
+      var visible = 0;
+      rows.forEach(function (row) {
+        var cats = (row.getAttribute("data-category") || "").split(" ");
+        var show = filter === "all" || cats.indexOf(filter) !== -1;
+        row.hidden = !show;
+        if (show) visible++;
+      });
+      if (countEl) countEl.textContent = visible + (visible === 1 ? " post" : " posts");
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        chips.forEach(function (c) { c.classList.remove("is-active"); });
+        chip.classList.add("is-active");
+        apply(chip.getAttribute("data-filter"));
+      });
+    });
+
+    apply("all");
+  })();
+</script>
