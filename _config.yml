@@ -1,0 +1,33 @@
+# Site settings
+title: Jocelyn McKnight
+email: jocelyn.mcknight@uleth.ca
+description: >-
+  Personal website of Jocelyn McKnight — an English Language Arts undergraduate
+  at the University of Lethbridge, with interests in Old English philology,
+  linguistics, and digital humanities.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://Jocelyn-McKnight.github.io" # the base hostname & protocol for your site
+
+# Links shown in the footer (icons added automatically by the minima theme)
+github_username: Jocelyn-McKnight
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Pages shown in the top navigation bar, in this order.
+# (The site title links to the home/blog page.)
+header_pages:
+  - about.markdown
+  - projects.markdown
+  - cv.markdown
+
+# Show a short excerpt for each post on the home page
+show_excerpts: true
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
