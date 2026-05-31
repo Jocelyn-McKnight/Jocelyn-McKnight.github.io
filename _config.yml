@@ -2,13 +2,10 @@
 title: Jocelyn McKnight
 email: jocelyn.mcknight@uleth.ca
 description: >-
-  Personal website of Jocelyn McKnight — an English Language Arts undergraduate
-  at the University of Lethbridge, with interests in Old English philology,
-  linguistics, and digital humanities.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://Jocelyn-McKnight.github.io" # the base hostname & protocol for your site
+  Personal website of Jocelyn McKnight
+baseurl: ""
+url: "https://Jocelyn-McKnight.github.io"
 
-# Links shown in the footer (icons added automatically by the minima theme)
 github_username: Jocelyn-McKnight
 
 # Build settings
@@ -19,6 +16,7 @@ plugins:
 # Pages shown in the top navigation bar, in this order.
 # (The site title / your name links to the home page.)
 header_pages:
+  - home.html
   - projects.html
   - blog.html
   - cv.html

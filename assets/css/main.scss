@@ -297,7 +297,7 @@ table th { background-color: var(--code-bg); }
 
 // Time-table row: year column + detail column
 .cv-row { display: flex; flex-direction: row; }
-.cv-col-year { flex: 0 0 120px; text-align: left; padding-top: 0.1rem; }
+.cv-col-year { flex: 0 0 150px; text-align: left; padding-top: 0.1rem; }
 .cv-col-detail {
   flex: 1 1 auto;
   min-width: 0;
