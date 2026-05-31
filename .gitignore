@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Not committed: this machine's Bundler writes a non-standard lockfile that
+# other Bundlers (CI, GitHub Pages) can't read. Letting each environment
+# resolve its own keeps builds working everywhere.
+Gemfile.lock
