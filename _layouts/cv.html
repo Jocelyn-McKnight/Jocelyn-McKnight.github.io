@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <div class="cv-layout">
 
   <aside class="cv-sidebar">
-    <nav class="cv-toc">
-      <ul>
+    <nav class="cv-toc" data-toggle="toc">
+      <ul class="nav">
         {% for entry in site.data.cv %}
-        <li><a href="#{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#{{ entry.title | slugify }}">{{ entry.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -15,60 +17,96 @@ layout: default
 
   <article class="cv-content post">
     <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      {% if page.cv_pdf %}
-        <p>📄 <a href="{{ page.cv_pdf | relative_url }}">Download the full CV (PDF)</a></p>
-      {% endif %}
+      <h1 class="post-title">
+        {{ page.title }}
+        {% if page.cv_pdf %}
+          <a href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link" title="Download CV as PDF">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        {% endif %}
+      </h1>
+      {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
     </header>
 
     {{ content }}
 
-    {% for entry in site.data.cv %}
-    <section class="cv-section" id="{{ entry.title | slugify }}">
-      <h2>{{ entry.title }}</h2>
+    <div class="cv">
+      {% for entry in site.data.cv %}
+      <span class="cv-anchor" id="{{ entry.title | slugify }}"></span>
+      <div class="card cv-card">
+        <h3 class="cv-card-title">{{ entry.title }}</h3>
+        <div>
 
-      {% case entry.type %}
+          {% case entry.type %}
 
-        {% when 'map' %}
-          <dl class="cv-info">
-            {% for c in entry.contents %}
-              <dt>{{ c.name }}</dt>
-              <dd>{{ c.value }}</dd>
-            {% endfor %}
-          </dl>
+          {% when 'map' %}
+            <table class="table-cv">
+              <tbody>
+                {% for c in entry.contents %}
+                <tr>
+                  <td class="cv-map-name"><b>{{ c.name }}</b></td>
+                  {% if c.value %}<td class="cv-map-value">{{ c.value }}</td>{% endif %}
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
 
-        {% when 'time_table' %}
-          {% for c in entry.contents %}
-            <div class="cv-entry">
-              {% if c.year %}<div class="cv-date">{{ c.year }}</div>{% endif %}
-              <div class="cv-body">
-                {% if c.items %}
-                  <ul>{% for it in c.items %}<li>{{ it }}</li>{% endfor %}</ul>
-                {% else %}
-                  {% if c.title %}<h3>{{ c.title }}</h3>{% endif %}
-                  {% if c.institution %}<div class="cv-inst">{{ c.institution }}</div>{% endif %}
-                  {% if c.description %}
-                    <ul>{% for d in c.description %}<li>{{ d }}</li>{% endfor %}</ul>
+          {% when 'time_table' %}
+            <ul class="list-group list-group-flush">
+              {% for c in entry.contents %}
+              <li class="list-group-item">
+                <div class="cv-row">
+                  {% if c.year %}
+                  <div class="cv-col-year">
+                    <span class="cv-badge">{{ c.year }}</span>
+                    {% if c.location %}
+                      <p class="cv-location"><i class="fa-solid fa-location-dot cv-icon-location"></i> {{ c.location }}</p>
+                    {% endif %}
+                  </div>
                   {% endif %}
+                  <div class="cv-col-detail">
+                    {% if c.title %}<h6 class="cv-title">{{ c.title }}</h6>{% endif %}
+                    {% if c.institution %}
+                      <p class="cv-institution"><i class="fa-solid fa-building-columns cv-icon-institution"></i> {{ c.institution }}</p>
+                    {% endif %}
+                    {% if c.department %}
+                      <p class="cv-department"><i class="fa-regular fa-circle-dot cv-icon-department"></i> {{ c.department }}</p>
+                    {% endif %}
+                    {% if c.description %}
+                      <ul class="cv-items">{% for d in c.description %}<li>{{ d }}</li>{% endfor %}</ul>
+                    {% endif %}
+                    {% if c.items %}
+                      <ul class="cv-items">{% for it in c.items %}<li>{{ it }}</li>{% endfor %}</ul>
+                    {% endif %}
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+
+          {% when 'nested_list' %}
+            <ul class="list-group list-group-flush">
+              {% for c in entry.contents %}
+              <li class="list-group-item">
+                <h5 class="cv-nested-title">{{ c.title }}</h5>
+                {% if c.items %}
+                  <ul class="cv-items">{% for it in c.items %}<li>{{ it }}</li>{% endfor %}</ul>
                 {% endif %}
-              </div>
-            </div>
-          {% endfor %}
+              </li>
+              {% endfor %}
+            </ul>
 
-        {% when 'nested_list' %}
-          {% for c in entry.contents %}
-            <div class="cv-nested">
-              {% if c.title %}<h3>{{ c.title }}</h3>{% endif %}
-              <ul>{% for it in c.items %}<li>{{ it }}</li>{% endfor %}</ul>
-            </div>
-          {% endfor %}
+          {% when 'list' %}
+            <ul class="list-group list-group-flush">
+              {% for c in entry.contents %}<li class="list-group-item">{{ c }}</li>{% endfor %}
+            </ul>
 
-        {% when 'list' %}
-          <ul>{% for c in entry.contents %}<li>{{ c }}</li>{% endfor %}</ul>
+          {% endcase %}
 
-      {% endcase %}
-    </section>
-    {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 
   </article>
 </div>
@@ -76,7 +114,7 @@ layout: default
 <script>
   // Highlight the table-of-contents link for the section currently in view.
   (function () {
-    var links = Array.prototype.slice.call(document.querySelectorAll(".cv-toc a"));
+    var links = Array.prototype.slice.call(document.querySelectorAll(".cv-toc .nav-link"));
     if (!links.length || !("IntersectionObserver" in window)) return;
     var byId = {};
     var sections = [];
@@ -92,7 +130,7 @@ layout: default
           if (byId[entry.target.id]) byId[entry.target.id].classList.add("active");
         }
       });
-    }, { rootMargin: "-20% 0px -70% 0px" });
+    }, { rootMargin: "-10% 0px -80% 0px" });
     sections.forEach(function (s) { observer.observe(s); });
   })();
 </script>
