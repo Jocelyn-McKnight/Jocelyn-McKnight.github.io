@@ -35,7 +35,7 @@ humanities.
 
 <!-- A little map of where I've studied. Edit the markers in the script below. -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<div id="home-map" style="height: 300px; border-radius: 8px; margin: 1rem 0 2rem; z-index: 0;"></div>
+<div id="home-map" style="height: 300px; border-radius: 14px; margin: 1rem 0 2rem; z-index: 0;"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   (function () {
