@@ -17,14 +17,27 @@ plugins:
   - jekyll-feed
 
 # Pages shown in the top navigation bar, in this order.
-# (The site title links to the home/blog page.)
+# (The site title / your name links to the home page.)
 header_pages:
-  - about.markdown
   - projects.markdown
+  - blog.markdown
   - cv.markdown
 
-# Show a short excerpt for each post on the home page
+# Show a short excerpt for each post on the blog page
 show_excerpts: true
+
+# Each project is a simple file in the _projects folder.
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 # Exclude from processing.
 exclude:

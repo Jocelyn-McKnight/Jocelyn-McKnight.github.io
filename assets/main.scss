@@ -1,0 +1,185 @@
+---
+# Front matter (the dashes) tells Jekyll to process this file.
+# This overrides minima's default stylesheet and recreates the look of the
+# old al-folio site: black + gold dark theme, Roboto / Roboto Slab fonts,
+# a bold-name navbar, a floated profile photo, and project cards.
+---
+
+// --- Minima base ---------------------------------------------------------
+// Neutral values; the real colours come from the CSS variables below so the
+// light/dark toggle can switch them.
+$content-width: 930px;
+$on-laptop: 930px;
+$base-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$brand-color: #f4b400;
+
+@import "minima";
+
+// --- Theme colours -------------------------------------------------------
+// Dark is the default (matching the old site). Editing these two blocks
+// changes every colour on the site.
+:root,
+[data-theme="dark"] {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #ababab;
+  --accent: #f4b400;        // gold
+  --accent-hover: #ffd700;  // bright gold
+  --header-bg: #000000;
+  --footer-bg: #141414;
+  --card-bg: #0d0d0d;
+  --border: #333333;
+  --code-bg: #1a1a1a;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --accent: #b8860b;
+  --accent-hover: #d39e00;
+  --header-bg: #ffffff;
+  --footer-bg: #f4f4f4;
+  --card-bg: #ffffff;
+  --border: #e2e2e2;
+  --code-bg: #f4f4f4;
+}
+
+// --- Typography & base ---------------------------------------------------
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title, .post-title, .page-heading, .post-list-heading {
+  font-family: "Roboto Slab", Georgia, serif;
+  color: var(--text);
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); text-decoration: none; }
+
+.wrapper { max-width: 930px; }
+
+hr { border: 0; border-top: 1px solid var(--border); }
+
+blockquote {
+  color: var(--muted);
+  border-left: 4px solid var(--accent);
+}
+
+pre, code {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+table th, table td { border: 1px solid var(--border); }
+table th { background-color: var(--code-bg); }
+
+// --- Navbar --------------------------------------------------------------
+.site-header {
+  background-color: var(--header-bg);
+  border-top: 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--text);
+  font-weight: 700;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+.site-title:hover { color: var(--accent); }
+
+.site-nav {
+  background-color: var(--header-bg);
+  border-color: var(--border);
+
+  .page-link {
+    color: var(--text);
+    &:hover { color: var(--accent); }
+  }
+  .menu-icon > svg { fill: var(--text); }
+}
+
+// --- Theme toggle button -------------------------------------------------
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 6px 9px;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+// --- Footer --------------------------------------------------------------
+.site-footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+.site-footer a { color: var(--accent); }
+.footer-col-wrapper { color: var(--muted); }
+
+// --- Posts / blog list ---------------------------------------------------
+.post-link, .post-list h3 a, .post-title { color: var(--text); }
+.post-link:hover { color: var(--accent); }
+.post-meta { color: var(--muted); }
+
+// --- Home / about page ---------------------------------------------------
+.profile-pic {
+  float: right;
+  width: 230px;
+  max-width: 40%;
+  margin: 0 0 1.2rem 1.6rem;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  .profile-pic { float: none; display: block; margin: 0 auto 1.2rem; max-width: 70%; }
+}
+
+// --- Projects card grid --------------------------------------------------
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.25rem 0 2.5rem;
+}
+@media (max-width: 800px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .projects-grid { grid-template-columns: 1fr; } }
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+  a { color: inherit; text-decoration: none; display: block; }
+  &:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45); }
+
+  img { width: 100%; height: 160px; object-fit: cover; display: block; }
+  .card-body { padding: 0.7rem 1rem 1rem; }
+  h3 { margin: 0.3rem 0; font-size: 1.1rem; }
+  p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+}
+
+.project-hero {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+}
+.back-link { display: inline-block; margin-top: 2rem; }
