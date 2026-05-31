@@ -1,8 +1,8 @@
 ---
 # Front matter (the dashes) tells Jekyll to process this file.
 # This overrides minima's default stylesheet. Modern "clean light & airy"
-# theme: off-white background, near-black text, a calm teal accent, elegant
-# Fraunces serif headings over Inter sans-serif body. Light is the default;
+# theme: off-white background, near-black text, a warm orange accent, classic
+# Lora serif headings over Inter sans-serif body. Light is the default;
 # a modernised deep-slate dark theme is available via the toggle.
 ---
 
@@ -23,8 +23,8 @@ $brand-color: #0d9488;
   --bg: #fafafa;            // off-white
   --text: #1a1a1a;          // near-black
   --muted: #6b7280;         // soft grey
-  --accent: #0d9488;        // teal
-  --accent-hover: #0f766e;  // deeper teal
+  --accent: #ea580c;        // warm orange
+  --accent-hover: #c2410c;  // deeper orange
   --header-bg: rgba(250, 250, 250, 0.8);
   --footer-bg: #f3f4f6;
   --card-bg: #ffffff;
@@ -37,8 +37,8 @@ $brand-color: #0d9488;
   --bg: #0f172a;            // deep slate
   --text: #e2e8f0;          // soft white
   --muted: #94a3b8;
-  --accent: #2dd4bf;        // bright teal
-  --accent-hover: #5eead4;
+  --accent: #fb923c;        // warm orange
+  --accent-hover: #fdba74;
   --header-bg: rgba(15, 23, 42, 0.8);
   --footer-bg: #111827;
   --card-bg: #1e293b;
@@ -60,7 +60,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .site-title, .post-title, .page-heading, .post-list-heading {
-  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.01em;
@@ -118,7 +118,7 @@ table th { background-color: var(--code-bg); }
 .site-title:visited {
   color: var(--text);
   font-weight: 600;
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   letter-spacing: -0.01em;
 }
 .site-title:hover { color: var(--accent); text-decoration: none; }
@@ -268,23 +268,25 @@ table th { background-color: var(--code-bg); }
 
 // Time-table row: year column + detail column
 .cv-row { display: flex; flex-direction: row; }
-.cv-col-year { flex: 0 0 90px; text-align: center; }
-.cv-col-detail { flex: 1 1 auto; min-width: 0; margin-left: 1.5rem; }
+.cv-col-year { flex: 0 0 120px; text-align: left; padding-top: 0.1rem; }
+.cv-col-detail {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border);
+}
 
+// Year shown as a clean accent-coloured label (no filled "button").
 .cv-badge {
   display: inline-block;
-  min-width: 75px;
-  padding: 0.25em 0.6em;
-  background-color: var(--accent);
-  color: #fff;
-  font-size: 72%;
+  color: var(--accent);
+  font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  border-radius: 999px;
-  line-height: 1.5;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
 }
-.cv-location { font-size: 0.7rem; white-space: nowrap; margin: 0.4rem 0 0; }
+.cv-location { font-size: 0.72rem; color: var(--muted); margin: 0.35rem 0 0; }
 .cv-icon-location { color: var(--accent); font-size: 0.8rem; }
 
 .cv-title { margin: 0 0 0.3rem; font-weight: 700; font-size: 1rem; }
@@ -307,5 +309,5 @@ table th { background-color: var(--code-bg); }
   .cv-layout { display: block; }
   .cv-sidebar { display: none; }
   .cv-row { flex-direction: column; }
-  .cv-col-detail { margin-left: 0; margin-top: 0.5rem; }
+  .cv-col-detail { margin-left: 0; margin-top: 0.4rem; padding-left: 0; border-left: 0; }
 }
