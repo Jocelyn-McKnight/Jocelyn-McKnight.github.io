@@ -188,3 +188,63 @@ table th { background-color: var(--code-bg); }
   margin-bottom: 1.2rem;
 }
 .back-link { display: inline-block; margin-top: 2rem; }
+
+// --- CV with scroll-spy sidebar ------------------------------------------
+.cv-layout { display: flex; gap: 2.5rem; align-items: flex-start; }
+
+.cv-sidebar { flex: 0 0 170px; position: sticky; top: 80px; }
+.cv-toc ul { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--border); }
+.cv-toc li { margin: 0; }
+.cv-toc a {
+  display: block;
+  padding: 5px 14px;
+  margin-left: -2px;
+  border-left: 2px solid transparent;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+.cv-toc a:hover { color: var(--text); }
+.cv-toc a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 500; }
+
+.cv-content { flex: 1 1 auto; min-width: 0; }
+
+.cv-section { margin-bottom: 2.5rem; scroll-margin-top: 80px; }
+.cv-section > h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.cv-entry { display: flex; gap: 1.2rem; margin: 1.1rem 0; }
+.cv-date {
+  flex: 0 0 86px;
+  align-self: flex-start;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 3px 6px;
+  text-align: center;
+}
+.cv-body { flex: 1 1 auto; min-width: 0; }
+.cv-body h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.cv-inst { color: var(--muted); margin-bottom: 0.3rem; font-size: 0.92rem; }
+.cv-body ul, .cv-nested ul { margin: 0.3rem 0 0; padding-left: 1.1rem; }
+.cv-body li, .cv-nested li { margin-bottom: 0.2rem; }
+.cv-nested { margin: 0.8rem 0; }
+.cv-nested h3 { font-size: 1rem; margin: 0 0 0.2rem; }
+
+.cv-info { display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 1.2rem; margin: 0; }
+.cv-info dt { font-weight: 700; }
+.cv-info dd { margin: 0; }
+
+@media (max-width: 720px) {
+  .cv-layout { display: block; }
+  .cv-sidebar { display: none; }
+  .cv-entry { display: block; }
+  .cv-date { display: inline-block; margin-bottom: 0.35rem; }
+}

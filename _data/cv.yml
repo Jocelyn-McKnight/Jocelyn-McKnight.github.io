@@ -1,0 +1,146 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: "Jocelyn Lily McKnight"
+    - name: Email
+      value: "jocelyn.mcknight@uleth.ca"
+    - name: Location
+      value: "Lethbridge, Alberta, Canada"
+    - name: Languages
+      value: "English (native), French (fluent), Spanish (novice)"
+
+- title: Education
+  type: time_table
+  contents:
+    - title: "Bachelor of Arts in English Language Arts"
+      institution: "University of Lethbridge, Lethbridge, AB"
+      year: "2022 – 2026"
+      description:
+        - "Double minor in French and Linguistics."
+        - "Courses include independent studies, applied study, and honours thesis."
+    - title: "High School Diploma (French Immersion)"
+      institution: "Dr. E. P. Scarlett High School, Calgary, AB"
+      year: "2019 – 2022"
+      description:
+        - "Graduated with Honours."
+        - "French Immersion and Spanish Second Language program"
+        - "Relevant coursework: French Language Arts, Spanish Language and Culture, Calculus, Physics."
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: "Testing Centre Proctor"
+      institution: "University of Lethbridge Testing Centre"
+      year: "Sep. 2025 – Pres."
+      description:
+        - "Managing the student sign-in process and verifying student identification."
+        - "Ensuring a quiet, comfortable, and secure testing environment while monitoring exam writers to safeguard exam integrity."
+
+    - title: "Podcast Production Assistant"
+      institution: "Confederation of Alberta Faculty Associations"
+      year: "Apr. 2025 – Pres."
+      description:
+        - "Communicating with proposed guests for the podcast to see availability and scheduling interviews."
+        - "Providing guests with any pre-interview material and conducting follow-up communications."
+
+    - title: "Research Assistant"
+      institution: "The Visionary Cross Project"
+      year: "Sep. 2024 – Pres."
+      description:
+        - "Contributed to a digital edition of Old English artifacts related to the Visionary Cross Tradition."
+        - "Assisted in all aspects of the project such as coding, research, and innovative problem solving."
+
+    - title: "Undergraduate Teaching Assistant"
+      institution: "University of Lethbridge"
+      year: "Sep. 2024 – Apr. '25"
+      description:
+        - "Assisting beginner French classes."
+        - "Responsible for grading and feedback on grammar, style, and compositions."
+
+    - title: "Instructional Designer"
+      institution: "Ignite Centre for eLearning"
+      year: "Sep. 2023 – Apr. '25"
+      description:
+        - "Designed instructional materials for grades 1–12."
+        - "Built online courses for high school students across Alberta."
+
+- title: Volunteer
+  type: time_table
+  contents:
+    - title: "President"
+      institution: "The Meliorist, University of Lethbridge"
+      year: "Nov. 2025 – Pres."
+      description:
+        - "Leading the executive and general board in implementing the organization’s strategic plan and ensuring alignment with governance practices."
+        - "Overseeing initiatives to strengthen the journal’s visibility and professional presence within the university community."
+
+    - title: "Conference Organizer"
+      institution: "Environmental Conference of the Humanities"
+      year: "Feb. 2025 – Pres."
+      description:
+        - "Developing and leading the planning of an Environmental Humanities conference at the University of Lethbridge."
+        - "Preparing grants and internal funding applications with organizations such as LPIRG, ULSU, ULGSA, and Environmental Alberta."
+
+    - title: "Treasurer"
+      institution: "The Meliorist, University of Lethbridge"
+      year: "Nov. 2024 – 2025"
+      description:
+        - "Managed financial planning and investments to ensure sustainable cash flow for new initiatives, including micro-grant programs."
+        - "Chaired the Finance Committee and contributed to long-term strategic planning and executive decision-making."
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: "2025"
+      items:
+        - "Dean's Honour List (December, GPA 3.94)"
+        - "Lois Hole Humanities and Social Sciences Scholarship"
+        - "Jason Lang Scholarship"
+        - "LPIRG Event Grant"
+        - "Arthur J.E. Child Award in Economics, English, and History"
+        - "Senate Award"
+        - "ULSU Travel and Conference Grant"
+        - "Chinook Summer Research Award"
+        - "Dean's Honour List (April, GPA 3.80)"
+    - year: "2024"
+      items:
+        - "Dean's Honour List (December, GPA 3.80)"
+        - "Capstone Scholarship in Integrative Thinking"
+        - "University of Lethbridge Scholarship"
+        - "Jason Lang Scholarship"
+        - "Dean's Honour List (April, GPA 3.94)"
+    - year: "2023"
+      items:
+        - "Dean's Honour List (December, GPA 3.80)"
+        - "ORS Academic Achievement Award"
+        - "Jason Lang Scholarship"
+        - "Dean's Honour List (April, GPA 3.88)"
+    - year: "2022"
+      items:
+        - "Canadian Parents for French Alberta Bursary"
+        - "Alexander Rutherford Scholarship"
+        - "Board of Governors' Admission Scholarship"
+
+- title: Certifications
+  type: list
+  contents:
+    - "DELF B1 – Alliance Française of Calgary (2022)"
+    - "DELF B2 – Alliance Française of Calgary (2022)"
+    - "Digital Humanities for Beginners – University of Lethbridge (2024)"
+
+- title: Skills
+  type: list
+  contents:
+    - "Website development and markup (XML-TEI, HTML, Jekyll)"
+    - "Corpus Linguistics (AntConc, Voyant Tools, SketchEngine)"
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: "Philology & Digital Humanities"
+      items:
+        - "Old English, Old French, digital editions, scholarly interface design, 3D modeling, Cultural Heritage."
+    - title: "Linguistics"
+      items:
+        - "Corpus linguistics, mixed languages, semantics, cognitive linguistics, historical linguistics."

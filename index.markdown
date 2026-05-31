@@ -30,3 +30,27 @@ humanities.
 - LinkedIn: [jocelyn-mcknight](https://www.linkedin.com/in/jocelyn-mcknight)
 - ORCID: [0009-0006-5636-2854](https://orcid.org/0009-0006-5636-2854)
 - [Zenodo publications](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22McKnight%2C%20Jocelyn%22&l=list&p=1&s=10&sort=bestmatch)
+
+### Where I am
+
+<!-- A little map of where I've studied. Edit the markers in the script below. -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<div id="home-map" style="height: 300px; border-radius: 8px; margin: 1rem 0 2rem; z-index: 0;"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  (function () {
+    var places = [
+      { name: "Lethbridge, AB — University of Lethbridge", coords: [49.6935, -112.8418] },
+      { name: "Calgary, AB — hometown", coords: [51.0447, -114.0719] }
+    ];
+    var map = L.map("home-map", { scrollWheelZoom: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var group = L.featureGroup(
+      places.map(function (p) { return L.marker(p.coords).bindPopup(p.name); })
+    ).addTo(map);
+    map.fitBounds(group.getBounds().pad(0.5));
+  })();
+</script>
