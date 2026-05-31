@@ -1,11 +1,5 @@
----
-layout: page
-title: Projects
-permalink: /projects/
----
-
-A collection of past and present projects. Click any project to read more.
-
+<!-- Projects: cards grouped by category ("In progress" then "past"),
+     each group sorted by the `importance` field in the project's front matter. -->
 {% assign categories = "In progress,past" | split: "," %}
 {% for category in categories %}
 <h2>{{ category | capitalize }}</h2>

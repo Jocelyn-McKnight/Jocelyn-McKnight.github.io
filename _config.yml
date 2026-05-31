@@ -19,9 +19,9 @@ plugins:
 # Pages shown in the top navigation bar, in this order.
 # (The site title / your name links to the home page.)
 header_pages:
-  - projects.markdown
-  - blog.markdown
-  - cv.markdown
+  - projects.html
+  - blog.html
+  - cv.html
 
 # Show a short excerpt for each post on the blog page
 show_excerpts: true
