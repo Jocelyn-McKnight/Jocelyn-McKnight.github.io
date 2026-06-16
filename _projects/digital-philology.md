@@ -3,7 +3,7 @@ title: Pushing the Boundaries of Digital Philology
 description: Independent Study — survival analysis, collation, and sonification in Old English.
 img: /assets/img/digphil.jpg
 category: past
-importance: 1
+importance: 2
 ---
 
 In Winter 2025, I completed an independent study that sought to push beyond the

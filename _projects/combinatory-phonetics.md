@@ -3,7 +3,7 @@ title: Combinatory Phonetics
 description: Independent Study — comparative phonetics of English–French loanwords.
 img: /assets/img/anglfren.jpg
 category: past
-importance: 2
+importance: 3
 ---
 
 In this independent study, I conducted a comparative phonetic analysis of how English and

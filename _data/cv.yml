@@ -93,7 +93,7 @@
 
     - title: "Treasurer"
       institution: "The Meliorist, University of Lethbridge"
-      year: "Nov. 2024 – 2025"
+      year: "Nov. 2024 – Nov. 2025"
       description:
         - "Managed financial planning and investments to ensure sustainable cash flow for new initiatives, including micro-grant programs."
         - "Chaired the Finance Committee and contributed to long-term strategic planning and executive decision-making."
@@ -141,11 +141,11 @@
 - title: Certifications
   type: list
   contents:
-    - "DELF B1 – Alliance Française of Calgary (2022)"
-    - "DELF B2 – Alliance Française of Calgary (2022)"
-    - "Digital Humanities for Beginners – University of Lethbridge (2024)"
-    - "Archiving for the Future - University of Texas at Austin (2026)"
     - "Coding Fundamentals for Humanities - DHSI (2026)"
+    - "Archiving for the Future - University of Texas at Austin (2026)"
+    - "Digital Humanities for Beginners – University of Lethbridge (2024)"
+    - "DELF B2 – Alliance Française of Calgary (2022)"
+    - "DELF B1 – Alliance Française of Calgary (2022)"
 
 - title: Skills
   type: list
