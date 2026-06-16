@@ -13,29 +13,31 @@
 - title: Education
   type: time_table
   contents:
+    - title: "Master of Philosophy in Linguistics"
+      institution: "University of Hong Kong - Hong Kong, SAR, China "
+      year: "2026 – 2028"
     - title: "Bachelor of Arts in English Language Arts"
-      institution: "University of Lethbridge, Lethbridge, AB"
+      institution: "University of Lethbridge - Lethbridge, AB, Canada"
       year: "2022 – 2026"
       description:
         - "Double minor in French and Linguistics."
         - "Courses include independent studies, applied study, and honours thesis."
     - title: "High School Diploma (French Immersion)"
-      institution: "Dr. E. P. Scarlett High School, Calgary, AB"
+      institution: "Dr. E. P. Scarlett High School - Calgary, AB, Canada"
       year: "2019 – 2022"
       description:
         - "Graduated with Honours."
         - "French Immersion and Spanish Second Language program"
-        - "Relevant coursework: French Language Arts, Spanish Language and Culture, Calculus, Physics."
 
 - title: Experience
   type: time_table
   contents:
-    - title: "Testing Centre Proctor"
-      institution: "University of Lethbridge Testing Centre"
-      year: "Sep. 2025 – Pres."
+    - title: "Research Assistant"
+      institution: "A'tsimaani"
+      year: "Jan. 2026 – Pres."
       description:
-        - "Managing the student sign-in process and verifying student identification."
-        - "Ensuring a quiet, comfortable, and secure testing environment while monitoring exam writers to safeguard exam integrity."
+        - "Preparing archival metadata and memory sticks with copies of the Frantz Blackfoot language archive with audio and textual data."
+        - "Assisting with “A’tsimaani: An invitation to the Blackfoot Language” conference through website creation and management."
 
     - title: "Podcast Production Assistant"
       institution: "Confederation of Alberta Faculty Associations"
@@ -51,16 +53,23 @@
         - "Contributed to a digital edition of Old English artifacts related to the Visionary Cross Tradition."
         - "Assisted in all aspects of the project such as coding, research, and innovative problem solving."
 
+    - title: "Testing Centre Proctor"
+      institution: "University of Lethbridge Testing Centre"
+      year: "Sep. 2025 – Apr. 2026"
+      description:
+        - "Managing the student sign-in process and verifying student identification."
+        - "Ensuring a quiet, comfortable, and secure testing environment while monitoring exam writers to safeguard exam integrity."
+
     - title: "Undergraduate Teaching Assistant"
       institution: "University of Lethbridge"
-      year: "Sep. 2024 – Apr. '25"
+      year: "Sep. 2024 – Apr. 2026"
       description:
         - "Assisting beginner French classes."
         - "Responsible for grading and feedback on grammar, style, and compositions."
 
     - title: "Instructional Designer"
       institution: "Ignite Centre for eLearning"
-      year: "Sep. 2023 – Apr. '25"
+      year: "Sep. 2023 – Apr. 2025"
       description:
         - "Designed instructional materials for grades 1–12."
         - "Built online courses for high school students across Alberta."
@@ -92,6 +101,13 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: "2026"
+      items:
+        - "Dean's Honour List (April, GPA 4.00)"
+        - "Canada Graduate Research Scholarship - Master's program (Declined)"
+        - "Second Place Oral Presentation"
+        - "Best Poster Presentation"
+        - "Gold Medal Award Candidate"
     - year: "2025"
       items:
         - "Dean's Honour List (December, GPA 3.94)"
@@ -128,11 +144,14 @@
     - "DELF B1 – Alliance Française of Calgary (2022)"
     - "DELF B2 – Alliance Française of Calgary (2022)"
     - "Digital Humanities for Beginners – University of Lethbridge (2024)"
+    - "Archiving for the Future - University of Texas at Austin (2026)"
+    - "Coding Fundamentals for Humanities - DHSI (2026)"
 
 - title: Skills
   type: list
   contents:
     - "Website development and markup (XML-TEI, HTML, Jekyll)"
+    - "DH Skills (Python, Java, 3D modelling, GIS)"
     - "Corpus Linguistics (AntConc, Voyant Tools, SketchEngine)"
 
 - title: Academic Interests
