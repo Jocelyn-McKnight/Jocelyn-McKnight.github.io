@@ -1,57 +1,45 @@
 ---
 # Front matter (the dashes) tells Jekyll to process this file.
-# This overrides minima's default stylesheet. Modern "clean light & airy"
+# This overrides minima's default stylesheet. A single "clean light & airy"
 # theme: off-white background, near-black text, a warm orange accent, classic
-# Lora serif headings over Inter sans-serif body. Light is the default;
-# a true-black dark theme is available via the toggle.
+# Lora serif headings over Inter sans-serif body.
 ---
 
 // --- Minima base ---------------------------------------------------------
-// Neutral values; the real colours come from the CSS variables below so the
-// light/dark toggle can switch them.
+// Neutral values; the real colours come from the CSS variables below.
 $content-width: 820px;
 $on-laptop: 820px;
 $base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-$brand-color: #0d9488;
+$brand-color: #ea580c;
 
 @import "minima";
 
 // --- Theme colours -------------------------------------------------------
-// Light is the default. Editing these blocks changes every colour on the site.
-:root,
-[data-theme="light"] {
-  --bg: #fafafa;            // off-white
-  --text: #1a1a1a;          // near-black
-  --muted: #6b7280;         // soft grey
-  --accent: #ea580c;        // warm orange
-  --accent-hover: #c2410c;  // deeper orange
+// One light theme, one small palette. Every colour on the site comes from
+// these six values: a background, two greys, one accent (+ its hover), and a
+// surface for cards. Editing these changes the whole site.
+:root {
+  --bg: #fafafa;            // off-white background
+  --surface: #ffffff;       // cards, panels
+  --text: #1a1a1a;          // near-black text
+  --muted: #6b7280;         // soft grey (secondary text, borders' darker kin)
+  --accent: #d47a49;        // warm orange
+  --accent-hover: #914b30;  // deeper orange (hover)
+
+  // Derived from the palette above — not new colours, just tints/opacities.
+  --border: #e5e7eb;
   --header-bg: rgba(250, 250, 250, 0.8);
   --footer-bg: #f3f4f6;
-  --card-bg: #ffffff;
-  --border: #e5e7eb;
+  --card-bg: var(--surface);
   --code-bg: #f3f4f6;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
-}
-
-[data-theme="dark"] {
-  --bg: #000000;            // true black
-  --text: #f5f5f5;          // soft white
-  --muted: #a1a1a1;
-  --accent: #fb923c;        // warm orange
-  --accent-hover: #fdba74;
-  --header-bg: rgba(0, 0, 0, 0.8);
-  --footer-bg: #0a0a0a;
-  --card-bg: #121212;
-  --border: #2a2a2a;
-  --code-bg: #1a1a1a;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 // --- Typography & base ---------------------------------------------------
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -60,7 +48,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .site-title, .post-title, .page-heading, .post-list-heading {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.01em;
@@ -136,22 +124,6 @@ table th { background-color: var(--code-bg); }
   }
   .menu-icon > svg { fill: var(--text); }
 }
-
-// --- Theme toggle button -------------------------------------------------
-.theme-toggle {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text);
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 1;
-  padding: 7px 10px;
-  margin-left: 14px;
-  vertical-align: middle;
-  transition: border-color 0.15s ease, color 0.15s ease;
-}
-.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
 
 // --- Footer --------------------------------------------------------------
 .site-footer {

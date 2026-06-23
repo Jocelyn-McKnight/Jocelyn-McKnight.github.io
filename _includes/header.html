@@ -23,28 +23,8 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☀</button>
         </div>
       </nav>
     {%- endif -%}
   </div>
-
-  <script>
-    // Light/dark toggle. Saves the choice so it sticks between visits.
-    (function () {
-      var btn = document.getElementById('theme-toggle');
-      if (!btn) return;
-      function refresh() {
-        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-        btn.textContent = dark ? '☀' : '☾';
-      }
-      refresh();
-      btn.addEventListener('click', function () {
-        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        refresh();
-      });
-    })();
-  </script>
 </header>
